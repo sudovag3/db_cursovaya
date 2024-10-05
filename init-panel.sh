@@ -21,7 +21,7 @@ cd 3x-ui
 sed -i 's/latest/v2.0.2/g' docker-compose.yml
 
 # Запуск docker-compose
-docker-compose up -d
+docker compose up -d
 
 # Создание сертификатов
 openssl req -x509 -newkey rsa:4096 -nodes -sha256 -keyout private.key -out public.key -days 3650 -subj "/CN=APP"
