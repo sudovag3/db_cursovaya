@@ -17,9 +17,6 @@ chmod +x /usr/local/bin/docker-compose
 git clone https://github.com/MHSanaei/3x-ui.git && \
 cd 3x-ui
 
-# Изменение версии в docker-compose.yml
-sed -i 's/latest/v2.0.2/g' docker-compose.yml
-
 # Запуск docker-compose
 docker compose up -d
 
